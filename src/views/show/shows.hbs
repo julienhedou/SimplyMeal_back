@@ -1,0 +1,54 @@
+<h1>Shows</h1>
+
+<table class="table">
+ <thead>
+   <th>Name</th>
+   <th>Venue</th>
+   <th>Description</th>
+   <th>Capacity</th>
+   <th>Price</th>
+   <th>Date</th>
+   <th>Actions</th>
+ </thead>
+
+  {{#list shows}}
+
+  <tr>
+    <td>
+      <a class="btn btn-secondary btn-sm" href="/shows/id/{{id}}" role="button">
+        {{name}}
+      </a>
+    </td>
+    <td>
+      {{venue}}
+    </td>
+    <td>
+      {{description}}
+    </td>
+    <td>
+      {{capacity}}
+    </td>
+    <td>
+      {{price}}
+    </td>
+    <td>
+      {{date}}
+    </td>
+    <td>
+      <a class="btn btn-outline-secondary btn-sm" href="/shows/update/{{id}}" role="button">
+        Update
+      </a>
+      <a class="btn btn-outline-danger btn-sm" href="/shows/delete/{{id}}" role="button">
+        Delete
+      </a>
+    </td>
+  </tr>
+
+  {{/list}}
+</table>
+
+<div class="text-center">
+  <a class="btn btn-primary" href="/shows/create" role="button">
+    Add a show
+  </a>
+</div>

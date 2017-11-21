@@ -1,0 +1,54 @@
+<h1>Recipes</h1>
+
+<table class="table">
+ <thead>
+   <th>Name</th>
+   <th>description_global</th>
+   <th>category</th>
+   <th>ingredients</th>
+   <th>quantity</th>
+   <th>description_deltail</th>
+   <th>Actions</th>
+ </thead>
+
+  {{#list recipes}}
+
+  <tr>
+    <td>
+      <a class="btn btn-secondary btn-sm" href="/recipes/id/{{id}}" role="button">
+        {{name}}
+      </a>
+    </td>
+    <td>
+      {{description_global}}
+    </td>
+    <td>
+      {{category}}
+    </td>
+    <td>
+      {{ingredients}}
+    </td>
+    <td>
+      {{quantity}}
+    </td>
+    <td>
+      {{description_detail}}
+    </td>
+    <td>
+      <a class="btn btn-outline-secondary btn-sm" href="/recipes/update/{{id}}" role="button">
+        Update
+      </a>
+      <a class="btn btn-outline-danger btn-sm" href="/recipes/delete/{{id}}" role="button">
+        Delete
+      </a>
+    </td>
+  </tr>
+
+  {{/list}}
+</table>
+
+<div class="text-center">
+  <a class="btn btn-primary" href="/recipes/create" role="button">
+    Add a recipe
+  </a>
+</div>

@@ -1,0 +1,45 @@
+<h1>Create recipe</h1>
+
+<form action="/recipes/create" method="post">
+  <div class="form-group">
+    <label for="name">Name*</label>
+    <input class="form-control" type="text" id="name" name="name" placeholder="Nom de la recette" required>
+  </div>
+
+  <div class="form-group">
+    <label for="description_global">description_global*</label>
+    <input class="form-control" type="text" id="description_global" name="description_global" placeholder="description rapide de la recette" required>
+  </div>
+
+  <div class="form-group">
+    <label for="category">category</label>
+    <input class="form-control" type="text" id="category" name="category" placeholder="category de la recette" required>
+  </div>
+
+  <div class="form-group">
+    <label for="ingredients">ingredients</label>
+    <input class="form-control" type="array of text" id="ingredients" name="ingredients" placeholder="liste des ingredients" required>
+  </div>
+
+  <div class="form-group">
+    <label for="quantity">quantity*</label>
+    <input class="form-control" type="array of number" id="quantity" name="quantity" placeholder="quantite de chaque ingredient" required>
+  </div>
+
+  <div class="form-group">
+    <label for="image">Image</label>
+    <input class="form-control" type="text" id="image" name="image" placeholder="Ex: http://lien.vers-l-image.com/img.jpeg">
+  </div>
+
+  <div class="form-group">
+    <label for="description_detail">description_detail</label>
+    <input class="form-control" type="text" id="description_detail" name="description_detail" placeholder="description_detail">
+  </div>
+
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">
+      Create
+    </button>
+  </div>
+</form>
