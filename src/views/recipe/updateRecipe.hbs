@@ -1,6 +1,6 @@
 <h1>Update recipe</h1>
 
-<form action="/recipes/update" method="post">
+<form action="/recipes/update/{{recipe.id}}" method="post">
   <div class="form-group">
     <label for="name">Name*</label>
     <input value="{{recipe.name}}"class="form-control" type="text" id="name" name="name" placeholder="Nom de la recette" required>
@@ -21,10 +21,6 @@
     <input value="{{recipe.ingredients}}" class="form-control" type="array of text" id="ingredients" name="ingredients" placeholder="liste des ingredients" required>
   </div>
 
-  <div class="form-group">
-    <label for="quantity">quantity*</label>
-    <input value="{{recipe.quantity}}" class="form-control" type="array of number" id="quantity" name="quantity" placeholder="quantite de chaque ingredient" required>
-  </div>
 
   <div class="form-group">
     <label for="image">Image</label>
