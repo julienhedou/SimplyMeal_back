@@ -73,7 +73,7 @@ const createRecipe = (recipe) => {
       throw new Error('wrongCategory');
     }
 
-    return RecipeModel.createRecipe(recipe);
+  return RecipeModel.createRecipe(recipe);
 }
 
 const updateRecipe = (id, recipe) => {

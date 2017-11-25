@@ -6,7 +6,7 @@ mongoose.Promise = global.Promise;
 
 import RecipeSeeds from "../helpers/RecipeSeeds";
 
-var categories = {values : ['Healthy','Gourmand','Noël','Automne'],
+var categories = {values : ['Healthy','Gourmand','Noel','Automne'],
                 message: 'enum validator failed for path `{PATH}` with value `{VALUE}`'
 }
 
